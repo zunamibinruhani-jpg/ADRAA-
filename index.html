@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Data Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    section {
+      margin-top: 30px;
+    }
+    ul {
+      list-style-type: square;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input[type="email"] {
+      padding: 8px;
+      width: 250px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 8px 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John Doe</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I'm John, a passionate web developer with experience in creating modern websites and applications. I love coding and designing user-friendly interfaces.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Angular, Vue</li>
+      <li>Node.js, Express</li>
+      <li>UI/UX Design</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: john.doe@example.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Location: New York, USA</p>
+  </section>
+
+  <section>
+    <h2>Send me an Email</h2>
+    <form id="emailForm">
+      <input type="email" id="emailInput" placeholder="Your email" required />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById('emailForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('emailInput').value;
+      alert('Thank you! Your email ' + email + ' has been received.');
+    });
+  </script>
+</body>
+</html>
